@@ -30,7 +30,7 @@ class ContactsHandler(http.server.BaseHTTPRequestHandler):
         """Отправляет HTML-файл с заданным статусом, используя контекстный менеджер"""
         filepath = os.path.join(TEMPLATES_DIR, filename)
         try:
-            with open(filepath, 'rb') as f:   # контекстный менеджер
+            with open(filepath, 'rb') as f:
                 content = f.read()
             self.send_response(status_code)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
