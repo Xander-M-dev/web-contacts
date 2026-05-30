@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+
+venv/
+env/
+.venv/
+
+__pycache__/
+*.pyc
+*.pyo
+
+*.sqlite3
+*.sqlite
+
+poetry.lock
+pyproject.toml
