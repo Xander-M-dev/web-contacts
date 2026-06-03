@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная - Магазин</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1>Мой магазин</h1>
+            <nav>
+                <a href="{% url 'home' %}" class="text-white me-3">Главная</a>
+                <a href="{% url 'contacts' %}" class="text-white">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="mb-4">Главная</h1>
+        <p>Добро пожаловать в интернет-магазин!</p>
+        <div class="row">
+            <!-- Карточка товара (пример) -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <p class="card-text">Отличный товар по хорошей цене.</p>
+                        <a href="#" class="btn btn-primary">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Добавьте ещё карточки при необходимости -->
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <span class="text-muted">© 2025 Мой магазин</span>
+        </div>
+    </footer>
+</body>
+</html>
